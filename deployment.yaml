@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: level2-app
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: level2-app
+
+  template:
+    metadata:
+      labels:
+        app: level2-app
+
+    spec:
+      containers:
+        - name: level2-app
+          image: nikhilb619/level2-app:latest
+          ports:
+            - containerPort: 5000   
