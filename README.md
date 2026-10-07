@@ -267,6 +267,7 @@ kubectl get pods -n ingress-nginx
 
 The controller was running successfully.
 
+recent:///14e6639fb97c8943533a607d6ac5d990
 ---
 
 ## Final Traffic Flow
@@ -333,6 +334,7 @@ Response:
 ```text
 Level 3 Achieved! Hello,Live-Reloading is Working!
 ```
+recent:///f1b72fce42053ed1228ea1db6ac5db1b
 
 ## Key Takeaways
 
