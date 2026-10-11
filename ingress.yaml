@@ -1,5 +1,6 @@
 apiVersion: networking.k8s.io/v1
-kind: Ingress
+kind: Ingress                              # Resource type — a rule that routes external HTTP traffic to a Service
+
 
 metadata:
   name: level2-app-ingress
