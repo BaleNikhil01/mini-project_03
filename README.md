@@ -217,21 +217,6 @@ pathType: Prefix
 
 This means the rule matches the specified path and paths below it.
 
-For example, with:
-
-```text
-path: /
-pathType: Prefix
-```
-
-requests such as these can match:
-
-```text
-/
-/login
-/api
-/products
-```
 
 For a path such as:
 
