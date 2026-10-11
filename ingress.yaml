@@ -8,10 +8,20 @@ spec:
   rules:
     - http:
         paths:
-          - path: /
-            pathType: Prefix
+          - path: /                             # Match root "/" and everything under it ("/foo", "/bar/baz", etc.)
+            pathType: Prefix                    # Prefix (match / and all sub-paths), Exact (match only eg. /api only, no "/" no /api/admin )
             backend:
               service:
-                name: level2-app-service
+                name: level2-app-service       # The Kubernetes Service to route to
                 port:
-                  number: 80
+                  number: 80                    # port open on that service
+
+
+
+ #- path: /admin
+ #          pathType: Prefix
+  #          backend:
+   #           service:
+    #            name: admin-service
+     #           port:
+      #            number: 9090
